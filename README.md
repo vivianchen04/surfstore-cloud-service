@@ -6,4 +6,5 @@ The SurfStore service is composed of the following two services:BlockStore(store
 
 
 --- update1: add consistent hashing algorithm to support scalable blockstore services. For reality, simulate having many block store servers, and implement a mapping algorithm that maps blocks to servers.
+
 --- update2: modify metadata server to make it fault tolerant based on the RAFT protocol. 
