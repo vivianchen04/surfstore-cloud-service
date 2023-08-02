@@ -1,5 +1,5 @@
 # surfstore-cloud-service
-This is a cloud-based file storage service called SurfStore. SurfStore is a networked file storage application that is based on Dropbox, and lets you sync files to and from the “cloud”. You will implement the cloud service, and a client which interacts with your service via gRPC.
+This is a cloud-based file storage service called SurfStore. SurfStore is a networked file storage application that is based on Dropbox, and lets you sync files to and from the “cloud”. Implemented the cloud service, and a client which interacts with service via gRPC.
 
 Multiple clients can concurrently connect to the SurfStore service to access a common, shared set of files. Clients accessing SurfStore “see” a consistent set of updates to files, but SurfStore does not offer any guarantees about operations across files, meaning that it does not support multi-file transactions (such as atomic move).
 The SurfStore service is composed of the following two services:BlockStore(store content blocks and identifier) MetaStore (manages the metadata of files and the entire system)
